@@ -83,4 +83,4 @@ let deleten =  (req,res,next) =>{
  });
  
  }
- module.exports.put = deleten;
+ module.exports.deleten = deleten;
