@@ -59,8 +59,28 @@ module.exports.getid = getid;
 
 let put =  (req,res,next) =>{
  let id = parseInt(req.params.id);
- let text = req.body.text;
-
+ //let text = req.body.text;
+ res.json ({
+  "status":"success",
+  "data":{
+    "message": "het bericht met id " + id + "is geput"
+  }
+});
 
 }
 module.exports.put = put;
+
+// DELETE
+
+let deleten =  (req,res,next) =>{
+  let id = parseInt(req.params.id);
+  //let text = req.body.text;
+  res.json ({
+   "status":"success",
+   "data":{
+     "message": "het bericht met id " + id + "is verwijderd"
+   }
+ });
+ 
+ }
+ module.exports.put = deleten;

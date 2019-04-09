@@ -17,6 +17,9 @@ router.get('/messages/:id', messageController.getid);
 /* PUT ID */
 router.put('/messages/:id',  messageController.put);
 
+/* DELETE */
+router.put('/messages/:id',  messageController.delete);
+
 /* POST */
 router.post('/messages', messageController.post);
 
